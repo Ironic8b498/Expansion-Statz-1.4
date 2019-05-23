@@ -1,0 +1,399 @@
+# Paths file - This file will contain all paths that a player is allowed to take. Previously known as 'AdvancedConfig.yml'.
+# This file contains (by default) a Test group that shows the basic syntax of this file. 
+# For more information, go to https://github.com/Armarr/Autorank-2/wiki/How-to-configure-the-Paths.yml-file%3F.
+lobby:
+  prerequisites:
+    in group:
+      value: lobby
+  requirements:
+    world:
+      value: New+World
+  results:
+    command:
+      value: lp user &p group add recruit survival
+    message:
+      value: Welcome to Aaron's Survival World!
+  options:
+    display name: Recruit
+    auto choose: true
+    show based on prerequisites: true
+recruit:
+  prerequisites:
+    in group:
+      value: recruit
+  requirements:
+    time:
+      value: 2h
+  results:
+    command:
+      value: lp user &p promote survival survival
+    command2:
+      value: broadcast &p has just ranked up to Rank 0!
+    message:
+      value: Congratulations, you are now Rank 0!
+  options:
+    display name: Rank0
+    auto choose: true
+    show based on prerequisites: true
+zero:
+  prerequisites:
+    in group:
+      value: 0
+  requirements:
+    time:
+      value: 1d 8h
+    money:
+      value: 1000
+    mcmmo skill level1:
+      value: 50;fishing
+    mcmmo skill level2:
+      value: 50;repair
+    mcmmo skill level3:
+      value: 50;mining
+  results:
+    command:
+      value: lp user &p promote survival survival
+    command2:
+      value: broadcast &p has just ranked up to Rank 1!
+    message:
+      value: Congratulations, you are now Rank 1!
+  options:
+    display name: Rank1
+    auto choose: true
+    show based on prerequisites: true
+one:
+  prerequisites:
+    in group:
+      value: 1
+  requirements:
+    time:
+      value: 132h
+    mcmmo power level:
+      value: 1000
+  results:
+    command:
+      value: lp user &p promote survival survival
+    command2:
+      value: broadcast &p has just ranked up to Rank 2!
+    command3:
+      value: acb &p 2000
+    message:
+      value: Congratulations, you are now Rank 2!
+  options:
+    display name: Rank2
+    auto choose: true
+    show based on prerequisites: true
+two:
+  prerequisites:
+    in group:
+      value: 2
+  requirements:
+    time:
+      value: 12d
+    mcmmo skill level1:
+      value: 100;excavation
+    mcmmo skill level2:
+      value: 100;fishing
+    mcmmo skill level3:
+      value: 100;herbalism
+    mcmmo skill level4:
+      value: 100;mining
+    mcmmo skill level5:
+      value: 100;woodcutting
+    mcmmo skill level6:
+      value: 100;archery
+    mcmmo skill level7:
+      value: 100;axes
+    mcmmo skill level8:
+      value: 100;swords
+    mcmmo skill level9:
+      value: 100;taming
+    mcmmo skill level10:
+      value: 100;unarmed
+    mcmmo skill level11:
+      value: 100;acrobatics
+    mcmmo skill level12:
+      value: 100;alchemy
+    mcmmo skill level13:
+      value: 100;repair
+  results:
+    command:
+      value: lp user &p promote survival survival
+    command2:
+      value: broadcast &p has just ranked up to Rank 3!
+    command3:
+      value: acb &p 2000
+    message:
+      value: Congratulations, you are now Rank 3!
+  options:
+    display name: Rank3
+    auto choose: true
+    show based on prerequisites: true
+three:
+  prerequisites:
+    in group:
+      value: 3
+  requirements:
+    time:
+      value: 17d
+    mcmmo skill level1:
+      value: 150;excavation
+    mcmmo skill level2:
+      value: 150;fishing
+    mcmmo skill level3:
+      value: 150;herbalism
+    mcmmo skill level4:
+      value: 150;mining
+    mcmmo skill level5:
+      value: 150;woodcutting
+    mcmmo skill level6:
+      value: 150;archery
+    mcmmo skill level7:
+      value: 150;axes
+    mcmmo skill level8:
+      value: 150;swords
+    mcmmo skill level9:
+      value: 150;taming
+    mcmmo skill level10:
+      value: 150;unarmed
+    mcmmo skill level11:
+      value: 150;acrobatics
+    mcmmo skill level12:
+      value: 150;alchemy
+    mcmmo skill level13:
+      value: 150;repair
+  results:
+    command:
+      value: lp user &p promote survival survival
+    command2:
+      value: broadcast &p has ranked up to Rank 4!
+    command3:
+      value: acb &p 2000
+    message:
+      value: Congratulations, you are now Rank 4!
+  options:
+    display name: Rank4
+    auto choose: true
+    show based on prerequisites: true
+four:
+  prerequisites:
+    in group:
+      value: 4
+  requirements:
+    time:
+      value: 22d
+    mcmmo skill level1:
+      value: 200;excavation
+    mcmmo skill level2:
+      value: 200;fishing
+    mcmmo skill level3:
+      value: 200;herbalism
+    mcmmo skill level4:
+      value: 200;mining
+    mcmmo skill level5:
+      value: 200;woodcutting
+    mcmmo skill level6:
+      value: 200;archery
+    mcmmo skill level7:
+      value: 200;axes
+    mcmmo skill level8:
+      value: 200;swords
+    mcmmo skill level9:
+      value: 200;taming
+    mcmmo skill level10:
+      value: 200;unarmed
+    mcmmo skill level11:
+      value: 200;acrobatics
+    mcmmo skill level12:
+      value: 200;alchemy
+    mcmmo skill level13:
+      value: 200;repair
+  results:
+    command:
+      value: lp user &p promote survival survival
+    command2:
+      value: broadcast &p has ranked up to Rank VIP!
+    command3:
+      value: acb &p 6000
+    message:
+      value: Congratulations, you are now Rank VIP!
+  options:
+    display name: VIP
+    auto choose: true
+    show based on prerequisites: true
+iGrief:
+  prerequisites:
+    in group:
+      value: igrief
+  requirements:
+    time:
+      value: 4h
+    mcmmo skill level:
+      value: 56;fishing
+  results:
+    command1:
+      value: lp user &p promote griefer
+    command2:
+      value: broadcast &p has ranked up to Rank dolor!
+    message:
+      value: Congratulations, you are now Rank dolor!
+  options:
+    display name: Dolor
+    auto choose: true
+    show based on prerequisites: true
+dolor:
+  prerequisites:
+    in group:
+      value: dolor
+  requirements:
+    time:
+      value: 9d
+    mcmmo power level1:
+      value: 1500
+    mcmmo skill level2:
+      value: 56;repair
+    mcmmo skill level3:
+      value: 56;mining
+  results:
+    command1:
+      value: lp user &p group remove dolor
+    command2:
+      value: ar reset &p chosenpath
+    command3:
+      value: broadcast &p has return to the trusted ranks!
+    message:
+      value: Congratulations, you are back to the trusted ranks!
+  options:
+    display name: Trusted
+    auto choose: true
+    show based on prerequisites: true
+iHack:
+  prerequisites:
+    in group:
+      value: iHack
+  requirements:
+    time:
+      value: 9h
+    mcmmo skill level:
+      value: 56;fishing
+  results:
+    command1:
+      value: lp user &p promote hacker
+    command2:
+      value: broadcast &p has ranked up to Rank corte!
+    message:
+      value: Congratulations, you are now Rank corte!
+  options:
+    display name: Corte
+    auto choose: true
+    show based on prerequisites: true
+corte:
+  prerequisites:
+    in group:
+      value: corte
+  requirements:
+    time:
+      value: 9d
+    mcmmo power level1:
+      value: 1500
+    mcmmo skill level2:
+      value: 56;repair
+    mcmmo skill level3:
+      value: 56;mining
+  results:
+    command1:
+      value: lp user &p group remove corte
+    command2:
+      value: ar reset &p chosenpath
+    command3:
+      value: broadcast &p has return to the trusted ranks!
+    message:
+      value: Congratulations, you are back to the trusted ranks!
+  options:
+    display name: Trusted
+    auto choose: true
+    show based on prerequisites: true
+iGrief2:
+  prerequisites:
+    in group:
+      value: igrief2
+  requirements:
+    time:
+      value: 12d
+    mcmmo skill level:
+      value: 112;fishing
+    mcmmo power level1:
+      value: 1500
+    mcmmo skill level2:
+      value: 112;repair
+    mcmmo skill level3:
+      value: 112;mining
+  results:
+    command1:
+      value: lp user &p group remove igrief2
+    command2:
+      value: ar reset &p chosenpath
+    command3:
+      value: broadcast &p has return to the trusted ranks!
+    message:
+      value: Congratulations, you are back to the trusted ranks!
+  options:
+    display name: iGrief
+    auto choose: true
+    show based on prerequisites: true
+iGrief3:
+  prerequisites:
+    in group:
+      value: igrief3
+  requirements:
+    time:
+      value: 17d
+    mcmmo skill level:
+      value: 168;fishing
+    mcmmo power level1:
+      value: 1500
+    mcmmo skill level2:
+      value: 168;repair
+    mcmmo skill level3:
+      value: 168;mining
+  results:
+    command1:
+      value: lp user &p group remove igrief3
+    command2:
+      value: ar reset &p chosenpath
+    command3:
+      value: broadcast &p has return to the trusted ranks!
+    message:
+      value: Congratulations, you are back to the trusted ranks!
+  options:
+    display name: iGrief
+    auto choose: true
+    show based on prerequisites: true
+iGrief4:
+  prerequisites:
+    in group:
+      value: igrief4
+  requirements:
+    time:
+      value: 22d
+    mcmmo skill level:
+      value: 224;fishing
+    mcmmo power level1:
+      value: 1500
+    mcmmo skill level2:
+      value: 224;repair
+    mcmmo skill level3:
+      value: 224;mining
+  results:
+    command1:
+      value: lp user &p group remove igrief4
+    command2:
+      value: ar reset &p chosenpath
+    command3:
+      value: broadcast &p has return to the trusted ranks!
+    message:
+      value: Congratulations, you are back to the trusted ranks!
+  options:
+    display name: iGrief
+    auto choose: true
+    show based on prerequisites: true
